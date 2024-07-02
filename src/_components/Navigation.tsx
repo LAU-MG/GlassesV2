@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import SearchBar from './SearchBar';
 import ShoppingBasket from './ShoppingBasket';
 import '../styles/Navigation.scss';
 
@@ -31,7 +30,6 @@ const Navigation: React.FC = () => {
           <Nav.Item>
             <div className="d-inline-flex align-items-center">
               <div className="d-flex justify-content-end ml-auto">
-                <SearchBar />
               </div>
               <div className="Shopping-btn">
                 <ShoppingBasket />

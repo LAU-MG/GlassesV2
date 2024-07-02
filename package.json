@@ -11,9 +11,10 @@
     "deploy": "next build && next export && gh-pages -d out",
     "watch:scss": "nodemon --watch 'src/**/*.scss' --exec 'node-sass src/main.scss dist/main.css'"
   },
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "next": "14.2.4",
+    "next": "^14.2.4",
     "react": "^18",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
@@ -21,8 +22,8 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "gh-pages": "^5.0.0",
