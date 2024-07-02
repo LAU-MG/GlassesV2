@@ -1,0 +1,52 @@
+.shopping-basket-wrapper {
+  position: relative;
+  .shopping-basket {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    h2 {
+      margin: 20px;
+    }
+    .close-button, .clear-button {
+      position: absolute;
+      top: 10px;
+      background: none;
+      cursor: pointer;
+      background: #f2f2f2;
+      border: 1px solid #e1e1e1;
+      color: #7d7d7d;
+      font-weight: bold;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .close-button {
+      right: 115px;
+    }
+
+    .clear-button {
+      right: 10px;
+    }
+
+  }
+
+  &.open {
+    .shopping-basket {
+      right: 0;
+    }
+  }
+  .shopping-basket-icon{
+    border: none;
+    background-color: transparent;
+  }
+
+}
+

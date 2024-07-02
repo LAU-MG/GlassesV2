@@ -1,0 +1,33 @@
+{
+  "name": "glassesv2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && next export && gh-pages -d out",
+    "watch:scss": "nodemon --watch 'src/**/*.scss' --exec 'node-sass src/main.scss dist/main.css'"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18",
+    "sass": "^1.77.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "gh-pages": "^5.0.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5"
+  }
+}

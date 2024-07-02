@@ -1,0 +1,192 @@
+$primary-color: #101010;
+$secondary-color: lightgray;
+
+@mixin button-styles {
+  background: $primary-color;
+  padding: 1rem;
+  border: 1px solid $primary-color;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* HERO-SECTION */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  width: 80%;
+  margin: 20px auto;
+
+  .rectangle-hero-section {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .column-container {
+    display: flex;
+    align-items: center;
+
+    .column-left {
+      flex: 1;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .column-right {
+      flex: 1;
+    }
+  }
+  .women-glasses {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+  }
+
+
+  .shop-now-btn {
+    @include button-styles;
+  }
+
+  .see-all-link {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
+
+  .see-all-link a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .title-products h3 {
+    font-weight: bold;
+  }
+
+}
+
+
+/* FEATURES PRODUCTS */
+.features-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .feature-left {
+      flex: 1;
+    }
+
+    .feature-right {
+      margin-left: auto;
+    }
+  }
+
+  .feature-left h3 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .feature-right a {
+    text-align: right;
+    margin: 0;
+  }
+
+  .features-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .column-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+}
+
+.man-glasses {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+/* RECOMMENDED */
+.title-recommended h1 {
+  font-weight: bold;
+}
+
+.title-products {
+  font-weight: bold;
+}
+
+.recommended-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+
+  .recommended {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .recommended-left {
+      flex: 1;
+    }
+
+    .recommended-right {
+      margin-left: auto;
+    }
+  }
+
+  .recommended-left h3 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .recommended-right a {
+    text-align: right;
+    margin: 0;
+  }
+
+  .recommended-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .women-happy-glasses {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+/* SHOP */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.2rem;
+}
+
+.product-card {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1.2rem;
+}
+
+.show-more-container {
+  margin-top: 20px;
+  text-align: center;
+
+  .show-more {
+    @include button-styles;
+  }
+}
