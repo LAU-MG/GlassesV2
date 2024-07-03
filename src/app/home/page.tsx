@@ -1,7 +1,8 @@
-// src/home/page.tsx
+// src/app/home/page.tsx
+
 import React from 'react';
 
-const Home: React.FC = () => {
+const HomePage = () => {
   return (
     <div>
       <h1>Welcome to the Home Page</h1>
@@ -9,4 +10,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;

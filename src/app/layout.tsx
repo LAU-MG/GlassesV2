@@ -1,19 +1,9 @@
-// src/app/layout.tsx
-import React, { ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
-interface LayoutProps {
-  children: ReactNode;
-}
+const RootLayout = ({ children }: { children: ReactNode }): ReactElement => (
+  <html lang="fr">
+  <body>{children}</body>
+  </html>
+);
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <html>
-    <head />
-    <body>
-    {children}
-    </body>
-    </html>
-  );
-};
-
-export default Layout;
+export default RootLayout;
