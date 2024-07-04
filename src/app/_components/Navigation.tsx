@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import ShoppingBasket from './ShoppingBasket';
@@ -27,17 +25,11 @@ const Navigation: React.FC = () => {
         </nav>
 
         <div className="d-flex justify-content-end">
-          <Nav.Item>
-            <div className="d-inline-flex align-items-center">
-              <div className="d-flex justify-content-end ml-auto">
-              </div>
-              <div className="Shopping-btn">
-                <ShoppingBasket />
-              </div>
-              <button className="btn-btn-up mx-2">Sign Up</button>
-              <button className="btn-btn-in">Sign In</button>
-            </div>
-          </Nav.Item>
+          <div className="d-inline-flex align-items-center">
+            <ShoppingBasket />
+            <button className="btn-btn-up mx-2">Sign Up</button>
+            <button className="btn-btn-in">Sign In</button>
+          </div>
         </div>
       </Nav>
     </div>
