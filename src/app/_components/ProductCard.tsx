@@ -1,8 +1,19 @@
+// src/app/_components/ProductCard.tsx
+
+import Image from 'next/image';
 import React from 'react';
 
-const ProductCard = ({ title, description, image, width, height }) => (
+interface ProductCardProps {
+  title: string;
+  description: string;
+  image: string;
+  width: number;
+  height: number;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ title, description, image, width, height }) => (
   <div className="product-card">
-    <img src={image} alt={title} width={width} height={height} />
+    <Image src={image} alt={title} width={width} height={height} />
     <h3>{title}</h3>
     <p>{description}</p>
   </div>
