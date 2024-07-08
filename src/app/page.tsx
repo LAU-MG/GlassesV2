@@ -1,59 +1,14 @@
 import React from 'react';
 import './styles.scss';
-import './_components/scss/Card.scss';
-import Footer from "./_components/Footer";
-import Header from "./_components/Header";
+// import '../_components/scss/Card.scss';
+import ProductCard from './components/ProductCard';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import 'bootstrap/scss/bootstrap.scss';
 import Link from "next/link";
 import Image from 'next/image';
 
 function App() {
-  // Données des produits
-  const products = [
-    {
-      title: "Product 1",
-      description: "Description",
-      image: "/images/Burnikk.png",
-      width: 200,
-      height: 200
-    },
-    {
-      title: "Product 2",
-      description: "Description",
-      image: "/images/Kibal_Batal.png",
-      width: 200,
-      height: 200
-    },
-    {
-      title: "Product 3",
-      description: "Description",
-      image: "/images/Kibal_Batal.png",
-      width: 200,
-      height: 200
-    },
-    {
-      title: "Product 4",
-      description: "Description",
-      image: "/images/Buldit.png",
-      width: 200,
-      height: 200
-    },
-    {
-      title: "Product 5",
-      description: "Description",
-      image: "/images/Balakubak.png",
-      width: 200,
-      height: 200
-    },
-    {
-      title: "Product 6",
-      description: "Description",
-      image: "/images/Kulangot.png",
-      width: 200,
-      height: 200
-    },
-  ];
-
   return (
     <div className="App">
       <Header />
@@ -65,7 +20,7 @@ function App() {
                 <div className="column-left">
                   <h1>See everything with Clarity</h1>
                   <p>Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered.</p>
-                  <Link href="">
+                  <Link href="./components/shop/">
                     <button className="shop-now-btn">Shop Now <i className="ri-arrow-right-s-line"><span role="img" aria-label="arrow-right" className="anticon anticon-arrow-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="arrow-right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"></path></svg></span></i></button>
                   </Link>
                 </div>
@@ -73,7 +28,8 @@ function App() {
             </div>
             <div className="col-md-6">
               <div className="column-container">
-                <Image className="women-glasses" src={`${process.env.PUBLIC_URL}/images/hero-section.png`} alt="woman wearing red glasses" />            </div>
+                {/*<Image className="women-glasses" src={`${process.env.PUBLIC_URL}/images/hero-section.png`} alt="woman wearing red glasses" />*/}
+              </div>
             </div>
           </div>
         </div>
@@ -91,15 +47,44 @@ function App() {
           </div>
         </div>
         <div className="row">
-          {products.slice(0, 3).map((product, index) => (
-            <div className="col-md-4" key={index}>
-              <div className="product">
-                <img src={product.image} alt={product.title} width={product.width} height={product.height} />
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-              </div>
-            </div>
-          ))}
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 1"
+              description="Description"
+              image=""
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image=""
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 4"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 5"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 6"
+              description="Description"
+              image=""            />
+          </div>
         </div>
       </div>
       <div className="features-container container">
@@ -115,19 +100,48 @@ function App() {
           </div>
         </div>
         <div className="row">
-          {products.slice(3, 6).map((product, index) => (
-            <div className="col-md-4" key={index}>
-              <div className="product">
-                <img src={product.image} alt={product.title} width={product.width} height={product.height} />
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-              </div>
-            </div>
-          ))}
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 1"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 4"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 5"
+              description="Description"
+              image=""            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 6"
+              description="Description"
+              image=""            />
+          </div>
         </div>
+
       </div>
       <Footer/>
     </div>
+
   );
 }
 
