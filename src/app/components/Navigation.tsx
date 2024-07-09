@@ -12,11 +12,11 @@ function Navigation() {
     <div className="nav-container">
       <div className="menu d-flex flex-column flex-md-row justify-content-between align-items-center">
         <a href="../" className="logo-container">
-          <Image className="logo img-fluid"
-                 src="/../../images/salinkaLogo.png"
-                 alt="logo"
-                 width={150}
-                 height={50} />
+          {/*<Image className="logo img-fluid"*/}
+          {/*       src="/../../images/salinkaLogo.png"*/}
+          {/*       alt="logo"*/}
+          {/*       width={150}*/}
+          {/*       height={50} />*/}
         </a>
         <nav className="nav d-flex">
           <div className="nav-item">

@@ -25,7 +25,7 @@ function ProductCardList() {
   };
 
   const products = [
-    { title: "Product 1", description: "Description", image: "/images/Kulangot.png" },
+    { title: "Product 1", description: "Description", image: "/app/components/images/Burnikk.png" },
     { title: "Product 2", description: "Description", image: "/images/Tiktilaok_Manok.png" },
     { title: "Product 3", description: "Description", image: "/images/Very_Nice.png" },
     { title: "Product 4", description: "Description", image: "/images/Quake_Overload.png" },
