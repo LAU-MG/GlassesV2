@@ -1,10 +1,11 @@
 // pages/page.tsx
 import React from 'react';
 import './styles.scss';
-import ProductCard from './components/ProductCard';
 import 'bootstrap/scss/bootstrap.scss';
-import Link from "next/link";
+import Link from 'next/link';
 import PageLayout from './components/PageLayout';
+import FeaturedProducts from './components/featured/FeaturedProduct';
+import RecommendedProducts from './components/recommended/RecommendedProduct';
 
 function App() {
   return (
@@ -35,45 +36,9 @@ function App() {
         </div>
       </div>
 
-      <div className="features-container container">
-        <div className="features">
-          <div className="row align-items-center">
-            <div className="title-products col-md-8 d-flex justify-content-end">
-              <h3 className="fw-bold">Featured Products</h3>
-            </div>
-          </div>
-          <div className="see-all-link col-md-6 d-flex justify-content-end fw-bold">
-            <Link href="/components/featured/">See All</Link>
-          </div>
-        </div>
-        <div className="row">
-          {Array.from({ length: 6 }, (_, i) => (
-            <div key={i} className="col-md-4">
-              <ProductCard title={`Product ${i + 1}`} description="Description" image="" />
-            </div>
-          ))}
-        </div>
-      </div>
+      <FeaturedProducts />
+      <RecommendedProducts />
 
-      <div className="features-container container">
-        <div className="features">
-          <div className="row align-items-center">
-            <div className="title-products col-md-8 d-flex justify-content-end">
-              <h3 className="fw-bold">Recommended Products</h3>
-            </div>
-          </div>
-          <div className="see-all-link col-md-6 d-flex justify-content-end fw-bold">
-            <Link href="/components/recommended/">See All</Link>
-          </div>
-        </div>
-        <div className="row">
-          {Array.from({ length: 6 }, (_, i) => (
-            <div key={i} className="col-md-4">
-              <ProductCard title={`Product ${i + 1}`} description="Description" image="" />
-            </div>
-          ))}
-        </div>
-      </div>
     </PageLayout>
   );
 }

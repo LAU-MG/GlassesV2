@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <Image className="logo img-fluid"
-               src="/../../images/salinkaLogo.png"
+               src="/images/salinkaLogo.png"
                alt="logo"
                width={100}
                height={50} />
