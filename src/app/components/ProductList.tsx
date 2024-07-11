@@ -1,49 +1,39 @@
-// components/ProductList.tsx
 import React from 'react';
-import ProductCard from './ProductCard';
 import Link from 'next/link';
+import '../styles.scss';
 
-interface Product {
-  title: string;
-  description: string;
-  image: string;
-  width: number;
-  height: number;
-}
-
-interface ProductListProps {
-  title: string;
-  products: Product[];
-  link: string;
-}
-
-const ProductList: React.FC<ProductListProps> = ({ title, products, link }) => {
+const ProductList = ({ title, products, link }) => {
   return (
-    <div className="features-container container">
-      <div className="features">
-        <div className="row align-items-center">
-          <div className="title-products col-md-8 d-flex justify-content-end">
-            <h3 className="fw-bold">{title}</h3>
-          </div>
-          <div className="see-all-link col-md-6 d-flex justify-content-end fw-bold">
+    <div className="product-list mx-4">
+      <div className="row align-items-center mb-3">
+        <div className="col-12 d-flex justify-content-between align-items-center">
+          <h3 className="fw-bold me-3">{title}</h3>
+          <div className="see-all-link fw-bold">
             <Link href={link}>See All</Link>
           </div>
         </div>
       </div>
       <div className="row">
         {products.map((product, index) => (
-          <div key={index} className="col-md-4">
-            <ProductCard
-              title={product.title}
-              description={product.description}
-              image={product.image}
-              width={product.width}
-              height={product.height}
-            />
+          <div key={index} className="col-md-3 mb-4 px-3">
+            <div className="card h-100">
+              <img
+                src={product.image}
+                className="card-img-top"
+                alt={product.title}
+                width={product.width}
+                height={product.height}
+              />
+              <div className="card-body d-flex flex-column">
+                <h5 className="card-title">{product.title}</h5>
+                <p className="card-text">{product.description}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
     </div>
+
   );
 };
 
