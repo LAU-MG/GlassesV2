@@ -1,5 +1,5 @@
 $primary-color: #101010;
-$secondary-color: lightgray;
+$secondary-color: #f3f3f3;
 
 @mixin button-styles {
   background: $primary-color;
@@ -15,7 +15,7 @@ $secondary-color: lightgray;
   justify-content: center;
   align-items: center;
   background-color: $secondary-color;
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
 
   .rectangle-hero-section {

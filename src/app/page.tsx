@@ -13,15 +13,11 @@ function App() {
       heroImage="/images/hero-section.png"
       heroImageWidth={600}
       heroImageHeight={400}
+      text="Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered."
     >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <p>
-              Buying eyewear should leave you happy and good-looking, with money
-              in your pocket. Glasses, sunglasses, and contacts—we’ve got your
-              eyes covered.
-            </p>
             <div className="column-container">
               <Link href="/components/shop/">
                 <button className="shop-now-btn">

@@ -1,8 +1,8 @@
-// components/PageLayout.tsx
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface PageLayoutProps {
   title: string;
@@ -10,9 +10,11 @@ interface PageLayoutProps {
   heroImageWidth?: number;
   heroImageHeight?: number;
   children: React.ReactNode;
+  text?: string;
+  button?:string;
 }
 
-const PageLayout: React.FC<PageLayoutProps> = ({ title, heroImage, heroImageWidth, heroImageHeight, children }) => {
+const PageLayout: React.FC<PageLayoutProps> = ({ title, heroImage, heroImageWidth, heroImageHeight, children, text, button }) => {
   return (
     <div className="App">
       <Header />
@@ -23,6 +25,12 @@ const PageLayout: React.FC<PageLayoutProps> = ({ title, heroImage, heroImageWidt
               <div className="column-container">
                 <div className="column-left">
                   <h1>{title}</h1>
+                  {text && <p>{text}</p>}
+                  {button && button&& (
+                    <Link href={button}>
+                      <button className="hero-button">{button}</button>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
