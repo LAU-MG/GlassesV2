@@ -4,8 +4,8 @@ import '../styles.scss';
 
 const ProductList = ({ title, products, link }) => {
   return (
-    <div className="product-list mx-4">
-      <div className="row align-items-center mb-3">
+    <div className="product-list mx-2">
+      <div className="row align-items-center mb-2">
         <div className="col-12 d-flex justify-content-between align-items-center">
           <h3 className="fw-bold me-3">{title}</h3>
           <div className="see-all-link fw-bold">

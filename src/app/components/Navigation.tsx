@@ -2,9 +2,6 @@
 
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
-// import SearchBar from './SearchBar';
-// import ShoppingBasket from './ShoppingBasket';
 import './scss/Navigation.scss';
 
 function Navigation() {
@@ -14,16 +11,16 @@ function Navigation() {
 
         <nav className="nav d-flex">
           <div className="nav-item">
-            <Link href="./../" className="link">Home</Link>
+            <Link href="../../" className="link">Home</Link>
           </div>
           <div className="nav-item">
-            <Link href="./shop/" className="link">Shop</Link>
+            <Link href="../components/shop/" className="link">Shop</Link>
           </div>
           <div className="nav-item">
-            <Link href="./../" className="link">Featured</Link>
+            <Link href="../components/featured/" className="link">Featured</Link>
           </div>
           <div className="nav-item">
-            <Link href="" className="link">Recommended</Link>
+            <Link href="../components/recommended/" className="link">Recommended</Link>
           </div>
         </nav>
 

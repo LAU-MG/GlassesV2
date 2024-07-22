@@ -25,10 +25,10 @@ const PageLayout: React.FC<PageLayoutProps> = ({ title, heroImage, heroImageWidt
               <div className="column-container">
                 <div className="column-left">
                   <h1>{title}</h1>
-                  {text && <p>{text}</p>}
-                  {button && button&& (
-                    <Link href={button}>
-                      <button className="hero-button">{button}</button>
+                  <p>{text}</p>
+                  {button && (
+                    <Link href={button.href}>
+                      <button className="hero-button">{button.label}</button>
                     </Link>
                   )}
                 </div>
