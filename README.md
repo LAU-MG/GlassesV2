@@ -1,37 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # GlassesV2
+
+## Description
+
+GlassesV2 est un projet développé pour mettre en pratique **Next.js** avec **TypeScript** et **Bootstrap**. Ce projet est une reproduction d'un projet existant, dans le but de s'exercer et de renforcer ses compétences avec ces technologies modernes.
+
+**Next.js** est un framework React qui facilite le développement d'applications web performantes et évolutives. **TypeScript** ajoute des types statiques à JavaScript, offrant une meilleure sécurité et une expérience de développement plus robuste. **Bootstrap** est un framework CSS populaire qui permet de créer des interfaces utilisateur réactives et attrayantes.
+
+En recréant ce projet, l'objectif est de :
+- **Se familiariser** avec les fonctionnalités avancées de Next.js, telles que le rendu côté serveur et la génération statique.
+- **Pratiquer** l'utilisation de TypeScript pour écrire du code plus sûr et maintenable.
+- **Apprendre** à intégrer et utiliser Bootstrap pour améliorer l'apparence et la convivialité de l'application.
+
+Ce projet représente une opportunité d'exercice pratique pour maîtriser ces technologies en combinant leurs fonctionnalités dans un seul projet.
