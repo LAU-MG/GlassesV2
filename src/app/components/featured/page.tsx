@@ -10,7 +10,7 @@ function Featured() {
       <div className="features-container">
         <div className="features">
           <div className="title-products feature-left">
-            <h1>Featured Products (test)</h1>
+            <h1>Featured Products</h1>
           </div>
         </div>
         <div className="features-products">

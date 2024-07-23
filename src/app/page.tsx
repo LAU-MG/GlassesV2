@@ -14,17 +14,19 @@ function App() {
       heroImageWidth={600}
       heroImageHeight={400}
       text="Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered."
-      button={{ href: '/components/shop', label: 'Shop Now' }}
-    >
+      button={{ href: '/components/shop', label: 'Shop Now'}}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
           </div>
         </div>
       </div>
-
-      <FeaturedProducts />
+  <div className="col-md-11 mx-auto">
+    <FeaturedProducts />
+  </div>
+      <div className="col-md-11 mx-auto">
       <RecommendedProducts />
+      </div>
     </PageLayout>
   );
 }

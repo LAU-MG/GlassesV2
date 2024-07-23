@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import '../styles.scss';
@@ -16,14 +17,14 @@ const ProductList = ({ title, products, link }) => {
       <div className="row">
         {products.map((product, index) => (
           <div key={index} className="col-md-3 mb-4 px-3">
-            <div className="card h-100">
-              <img
+            <div className="card h-100" style={{ border: '1px solid #ccc'}}>
+              <Image
                 src={product.image}
                 className="card-img-top"
                 alt={product.title}
                 width={product.width}
                 height={product.height}
-              />
+                style={{ backgroundColor: '#f0f0f0' }}              />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{product.title}</h5>
                 <p className="card-text">{product.description}</p>
