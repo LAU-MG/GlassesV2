@@ -12,16 +12,14 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ title, description, image, width, height }) => {
   return (
-    <div className="zoom-effect card">
-      <Image src={image} alt={title} width={width} height={height} className="card-img-top bg-light" />
-      <div className="product-card">
+    <div className='zoom-effect card'>
+      <Image src={image} alt={title} width={width} height={height} className='card-img-top bg-light' />
+      <div className='product-card'>
         <h4>{title}</h4>
         <p>{description}</p>
       </div>
-      </div>
+    </div>
   );
-}
+};
 
 export default ProductCard;
-
-

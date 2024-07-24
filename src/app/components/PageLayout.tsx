@@ -11,36 +11,44 @@ interface PageLayoutProps {
   heroImageHeight?: number;
   children: React.ReactNode;
   text?: string;
-  button?:string;
+  button?: string;
 }
 
-const PageLayout: React.FC<PageLayoutProps> = ({ title, heroImage, heroImageWidth, heroImageHeight, children, text, button }) => {
+const PageLayout: React.FC<PageLayoutProps> = ({
+  title,
+  heroImage,
+  heroImageWidth,
+  heroImageHeight,
+  children,
+  text,
+  button
+}) => {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
-      <div className="hero-section">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className="column-container">
-                <div className="column-left">
+      <div className='hero-section'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-md-6'>
+              <div className='column-container'>
+                <div className='column-left'>
                   <h1>{title}</h1>
                   <p>{text}</p>
                   {button && (
                     <Link href={button.href}>
-                      <button className="hero-button">{button.label}</button>
+                      <button className='hero-button'>{button.label}</button>
                     </Link>
                   )}
                 </div>
               </div>
             </div>
             {heroImage && heroImageWidth && heroImageHeight && (
-              <div className="col-md-6">
-                <div className="column-container">
+              <div className='col-md-6'>
+                <div className='column-container'>
                   <Image
-                    className="float-md-end"
+                    className='float-md-end'
                     src={heroImage}
-                    alt="hero image"
+                    alt='hero image'
                     width={heroImageWidth}
                     height={heroImageHeight}
                   />

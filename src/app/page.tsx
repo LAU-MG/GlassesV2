@@ -9,23 +9,22 @@ import RecommendedProducts from './components/recommended/RecommendedProduct';
 function App() {
   return (
     <PageLayout
-      title="See everything with Clarity"
-      heroImage="/images/hero-section.png"
+      title='See everything with Clarity'
+      heroImage='/images/hero-section.png'
       heroImageWidth={600}
       heroImageHeight={400}
-      text="Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered."
-      button={{ href: '/components/shop', label: 'Shop Now'}}>
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-          </div>
+      text='Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered.'
+      button={{ href: '/components/shop', label: 'Shop Now' }}>
+      <div className='container'>
+        <div className='row align-items-center'>
+          <div className='col-md-6'></div>
         </div>
       </div>
-  <div className="col-md-11 mx-auto">
-    <FeaturedProducts />
-  </div>
-      <div className="col-md-11 mx-auto">
-      <RecommendedProducts />
+      <div className='col-md-11 mx-auto'>
+        <FeaturedProducts />
+      </div>
+      <div className='col-md-11 mx-auto'>
+        <RecommendedProducts />
       </div>
     </PageLayout>
   );

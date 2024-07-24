@@ -44,7 +44,6 @@ $secondary-color: #f3f3f3;
     object-fit: cover;
   }
 
-
   .shop-now-btn {
     @include button-styles;
   }
@@ -62,9 +61,7 @@ $secondary-color: #f3f3f3;
   .title-products h3 {
     font-weight: bold;
   }
-
 }
-
 
 /* FEATURES PRODUCTS */
 .features-container {
@@ -107,8 +104,6 @@ $secondary-color: #f3f3f3;
     display: flex;
     align-items: center;
   }
-
-
 }
 
 .man-glasses {
@@ -190,4 +185,3 @@ $secondary-color: #f3f3f3;
     @include button-styles;
   }
 }
-

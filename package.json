@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "next build && next export && gh-pages -d out",
-    "watch:scss": "nodemon --watch 'src/**/*.scss' --exec 'node-sass src/main.scss dist/main.css'"
+    "watch:scss": "nodemon --watch 'src/**/*.scss' --exec 'node-sass src/main.scss dist/main.css'",
+    "prettier": "prettier --write ./src/",
+    "prettier.ci": "prettier --check ./src/"
   },
   "license": "MIT",
   "dependencies": {
@@ -21,14 +23,20 @@
     "sass": "^1.77.6"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.0.0",
     "@types/node": "^20",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "eslint-plugin-vitest": "^0.5.4",
     "gh-pages": "^5.0.0",
+    "jsdom": "^24.1.1",
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.4",
-    "typescript": "^5"
+    "prettier": "^3.3.3",
+    "typescript": "^5",
+    "vitest": "^2.0.4"
   }
 }
