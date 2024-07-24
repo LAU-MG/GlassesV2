@@ -1,4 +1,3 @@
-// pages/recommended/page.tsx
 'use client';
 
 import React from 'react';
@@ -6,7 +5,7 @@ import '../../styles.scss';
 import 'bootstrap/scss/bootstrap.scss';
 import PageLayout from '../../components/PageLayout';
 import ProductCard from '../../components/ProductCard';
-import Link from 'next/link';
+import Image from 'next/image'; // Assurez-vous d'importer Image
 
 // Définir le tableau des produits une seule fois
 const products = [
@@ -16,33 +15,35 @@ const products = [
   { title: 'Kulangot', image: '/images/Kulangot.png' },
   { title: 'Sipon Malapot', image: '/images/Sipon_Malapot.png' },
   { title: 'Pitaklan', image: '/images/Pitaklan.png' },
-  { title: 'Lunettes Noires', image: '/images/Lunettes_Noires.png' },
-  { title: 'Lunettes de Soleil', image: '/images/Lunettes_de_Soleil.png' },
-  { title: 'Lunettes de Vue', image: '/images/Lunettes_de_Vue.png' },
 ];
 
 function Recommended() {
   return (
-    <PageLayout title="Recommended Products">
-      <div className="recommended-container">
-        <div className="recommended">
+    <PageLayout
+      title="Recommended Products"
+      heroImage="/images/hero-section.png"
+      heroImageWidth={600}
+      heroImageHeight={400}
+    >
+        <div className="col-md-11 mx-auto">
           <div className="title-products recommended-left">
-            <h3>Recommended Products</h3>
-          </div>
+            <h2><strong>Recommended Products</strong></h2>
+
         </div>
-        <div className="recommended-products">
+        <div className="row">
           {products.map((product, index) => (
-            <ProductCard
-              key={index}
-              title={product.title}
-              description="Description"
-              image={product.image}
-              width={200}
-              height={180}
-            />
+            <div className="col-md-3 mb-4" key={index}>
+              <ProductCard
+                title={product.title}
+                description="Description"
+                image={product.image}
+                width={190}
+                height={200}
+              />
+            </div>
           ))}
         </div>
-      </div>
+        </div>
     </PageLayout>
   );
 }
